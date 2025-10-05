@@ -16,13 +16,8 @@ nota: el archivo tb3_simulation_launch.py se encuentra en la carpeta launch dent
     &nbsp;&nbsp; python3 Reordenar_5.py  
 - Con el script anterior se genera un archivo log_carga.txt que es el que utilizaremos para realizar las gráficas,  
     &nbsp;&nbsp;python3 Ejercicio_5.py  
-- Se ejecuta  
-    &nbsp;&nbsp;&nbsp;&nbsp;python nombre_archivo.py   ejemplo: python left_cam.py
-- Cuando finalice la ejecucion o se quiera salir del modo virtual  
-    &nbsp;&nbsp;&nbsp;&nbsp;deactivate  
-    &nbsp;&nbsp;&nbsp;&nbsp;cd
 
-## Nota
+## Ejercicio 6
 
 La ejecución de los scripts se corresponden con el enunciado de la siguiente manera  
 &nbsp;&nbsp;&nbsp;&nbsp;a) left_cam.py  
