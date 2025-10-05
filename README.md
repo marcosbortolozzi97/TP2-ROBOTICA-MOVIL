@@ -13,13 +13,22 @@ nota: el archivo tb3_simulation_launch.py se encuentra en la carpeta launch dent
 ## Ejercicio 5
 
 - En el directorio donde se generó el archivo log.txt se implementa un script que reordena los datos del mismo para generar una lectuta mas ordenada,  
-    &nbsp;&nbsp; python3 Reordenar_5.py  
+&nbsp;&nbsp; python3 Reordenar_5.py  
 - Con el script anterior se genera un archivo log_carga.txt que es el que utilizaremos para realizar las gráficas,  
-    &nbsp;&nbsp;python3 Ejercicio_5.py  
+&nbsp;&nbsp;python3 Ejercicio_5.py  
 
 ## Ejercicio 6
 
-La ejecución de los scripts se corresponden con el enunciado de la siguiente manera  
-&nbsp;&nbsp;&nbsp;&nbsp;a) left_cam.py  
-&nbsp;&nbsp;&nbsp;&nbsp;b) left_cam_nanoprecision.py  
-&nbsp;&nbsp;&nbsp;&nbsp;c) images_groundtruth.py
+La ejecución corresponde al mismo procedimiento utilizado en los ejecicios 4 y 5, solo se modifican nombres de archivos y scripts,
+&nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False  
+&nbsp;&nbsp;ros2 run teleop_twist_keyboard teleop_twist_keyboard  
+&nbsp;&nbsp; cd ~/dev_ws/src  
+&nbsp;&nbsp;./dump_odom.py > log_Circulo.txt  
+&nbsp;&nbsp; python3 Reordenar_6.py  
+&nbsp;&nbsp;python3 Ejercicio_6.py  
+  
+
+## Ejercicio 7
+
+La 
+
