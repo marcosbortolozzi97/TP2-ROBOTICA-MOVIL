@@ -6,7 +6,7 @@
 nota: el archivo tb3_simulation_launch.py se encuentra en la carpeta launch dentro de tb3_empty_world en el paquete dev_ws.  
 - En otra pestaña de la terminal se ejecuta la teleoperación por teclado,  
 &nbsp;&nbsp;ros2 run teleop_twist_keyboard teleop_twist_keyboard  
-- Una vez puesto en moviemiento el robot en la simulación, en una nueva pestaña de la terminal se redirecciona la salida con los datos a un archivo,
+- Una vez puesto en moviemiento el robot en la simulación, en una nueva pestaña de la terminal se redirecciona la salida con los datos a un archivo,  
 &nbsp;&nbsp; cd ~/dev_ws/src  
 &nbsp;&nbsp;./dump_odom.py > log.txt  
 
