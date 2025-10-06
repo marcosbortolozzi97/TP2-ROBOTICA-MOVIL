@@ -3,7 +3,7 @@
 
 - Se corre la simulación de desde la terminal para abrir gazebo con un espacio donde se encuentra el robot waffle pi a utilizar en un mundo vacío,  
 &nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False  
-nota: el archivo tb3_simulation_launch.py se encuentra en la carpeta launch dentro de tb3_empty_world en el paquete dev_ws.  
+nota: el archivo tb3_simulation_launch.py se encuentra en la carpeta /launch dentro de tb3_empty_world en el paquete dev_ws.  
 - En otra pestaña de la terminal se ejecuta la teleoperación por teclado,  
 &nbsp;&nbsp;ros2 run teleop_twist_keyboard teleop_twist_keyboard  
 - Una vez puesto en moviemiento el robot en la simulación, en una nueva pestaña de la terminal se redirecciona la salida con los datos a un archivo,  
@@ -28,7 +28,10 @@ La ejecución corresponde al mismo procedimiento utilizado en los ejecicios 4 y 
 &nbsp;&nbsp;python3 Ejercicio_6.py  
   
 
-## Ejercicio 7
+## Ejercicio 8
 
-La 
-
+Primero debemos diseñar el mundo con los cilindros y el waffle pi dentro, se modificó el archivo que contenia el mundo vacío y lo llamamos 'Ejercicio_8.xacro'. El mismo se encuentra en la carpeta /worlds dentro de tb3_empty_world. Comenzamos modificando el archivo tb3_simulation_launch.py,  
+&nbsp;&nbsp;world = '/home/marcos/dev_ws/src/tb3_empty_world/worlds/Ejercicio_8.xacro' (segun la ubicación de su directorio particular)  
+Ejecutamos como sigue:  
+&nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False  
+**Nota: Falta el desarrollo del detector de landmarks y generar el mapa en rviz**
