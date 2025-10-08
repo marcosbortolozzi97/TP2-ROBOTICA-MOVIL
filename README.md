@@ -40,6 +40,6 @@ En otra terminal ejecutamos:
 &nbsp;&nbsp;source install/setup.bash  
 &nbsp;&nbsp;ros2 run tb3_landmarks det_landmarks  
 En una tercera terminal verificamos :  
-&nbsp;&nbsp;ros2 topic echo /landmarks    
+&nbsp;&nbsp;ros2 topic echo /landmarks  < br /> 
 En RViz (abierto junto con Gazebo, sino se lo debe abrir) debemos seleccionar dentro de la sección **Displays** abrimos **Global Options**, y en la solapa a la derecha de **Fixed Frame** elegimos **base_link**. En caso de no estar, agregamos (solapa add) desde **by display type** el display **MarkerArray**, y una vez presente en la sección Displays abrimos y elegimos el **Topic** en la solapa a la derecha **/landmarks**.
 (*)Si queremos verificar que el laser scan esta publicando informacion de la simulacion en Gazebo abrimos otra terminal y ejecutamos **ros2 topic echo /scan**.
