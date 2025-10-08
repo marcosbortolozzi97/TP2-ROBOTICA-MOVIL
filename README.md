@@ -45,7 +45,7 @@ entry_points={
 },  
   
 Ejecutamos como sigue:  
-&nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False (*)  
+&nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False &nbsp;&nbsp;(*)  
 En otra terminal ejecutamos para lanzar el nodo:  
 &nbsp;&nbsp;cd ~/dev_ws  
 &nbsp;&nbsp;colcon build --packages-select tb3_landmarks  
