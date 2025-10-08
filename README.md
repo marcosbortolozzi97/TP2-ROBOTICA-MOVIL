@@ -39,9 +39,9 @@ Creamos un paquete para el nodo **det_landmark**,
 Dentro del directorio del paquete tb3_landmarks/tb3_landmarks/ agregamos el archivo **det_landmarks.py**.  
 Modificamos en el archivo **setup.py** el siguiente bloque de código:  
 entry_points={  
-    'console_scripts': [  
-        'det_landmarks = tb3_landmarks.det_landmarks:main',  
-    ],  
+&nbsp;&nbsp;&nbsp;&nbsp;'console_scripts': [  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'det_landmarks = tb3_landmarks.det_landmarks:main',  
+&nbsp;&nbsp;&nbsp;&nbsp;],  
 },  
   
 Ejecutamos como sigue:  
