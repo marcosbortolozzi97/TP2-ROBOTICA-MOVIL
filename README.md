@@ -33,5 +33,13 @@ La ejecución corresponde al mismo procedimiento utilizado en los ejecicios 4 y 
 Primero debemos diseñar el mundo con los cilindros y el waffle pi dentro, se modificó el archivo que contenia el mundo vacío y lo llamamos 'Ejercicio_8.xacro'. El mismo se encuentra en la carpeta /worlds dentro de tb3_empty_world. Comenzamos modificando el archivo tb3_simulation_launch.py,  
 &nbsp;&nbsp;world = '/home/marcos/dev_ws/src/tb3_empty_world/worlds/Ejercicio_8.xacro' (segun la ubicación de su directorio particular)  
 Ejecutamos como sigue:  
-&nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False  
-**Nota: Falta el desarrollo del detector de landmarks y generar el mapa en rviz**
+&nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False (*)  
+En otra terminal ejecutamos:  
+&nbsp;&nbsp;cd ~/dev_ws  
+&nbsp;&nbsp;colcon build --packages-select tb3_landmarks  
+&nbsp;&nbsp;source install/setup.bash  
+&nbsp;&nbsp;ros2 run tb3_landmarks det_landmarks  
+En una tercera terminal verificamos :  
+&nbsp;&nbsp;ros2 topic echo /landmarks    
+En RViz (abierto junto con Gazebo, sino se lo debe abrir) debemos seleccionar dentro de la sección **Displays** abrimos **Global Options**, y en la solapa a la derecha de **Fixed Frame** elegimos **base_link**. En caso de no estar, agregamos (solapa add) desde **by display type** el display **MarkerArray**, y una vez presente en la sección Displays abrimos y elegimos el **Topic** en la solapa a la derecha **/landmarks**.
+(*)Si queremos verificar que el laser scan esta publicando informacion de la simulacion en Gazebo abrimos otra terminal y ejecutamos **ros2 topic echo /scan**.
