@@ -37,7 +37,7 @@ Creamos un paquete para el nodo **det_landmark**,
 &nbsp;&nbsp; cd ~/dev_ws/src  
 &nbsp;&nbsp;ros2 pkg create --build-type ament_python tb3_landmarks  
 Dentro del directorio del paquete tb3_landmarks/tb3_landmarks/ agregamos el archivo **det_landmarks.py**.  
-Modificamos en el archivo **setup.py** el siguiente bloque de código:  
+Verificamos que en el archivo **setup.py** el siguiente bloque de código sea:  
 entry_points={  
 &nbsp;&nbsp;&nbsp;&nbsp;'console_scripts': [  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'det_landmarks = tb3_landmarks.det_landmarks:main',  
