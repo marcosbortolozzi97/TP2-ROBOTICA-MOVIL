@@ -32,6 +32,18 @@ La ejecución corresponde al mismo procedimiento utilizado en los ejecicios 4 y 
 
 Primero debemos diseñar el mundo con los cilindros y el waffle pi dentro, se modificó el archivo que contenia el mundo vacío y lo llamamos 'Ejercicio_8.xacro'. El mismo se encuentra en la carpeta /worlds dentro de tb3_empty_world. Comenzamos modificando el archivo tb3_simulation_launch.py,  
 &nbsp;&nbsp;world = '/home/marcos/dev_ws/src/tb3_empty_world/worlds/Ejercicio_8.xacro' (segun la ubicación de su directorio particular)  
+  
+Creamos un paquete para el nodo **det_landmark**,  
+&nbsp;&nbsp; cd ~/dev_ws/src  
+&nbsp;&nbsp;ros2 pkg create --build-type ament_python tb3_landmarks  
+Dentro del directorio del paquete tb3_landmarks/tb3_landmarks/ agregamos el archivo **det_landmarks.py**.  
+Modificamos en el archivo **setup.py** el siguiente bloque de código:  
+entry_points={  
+    'console_scripts': [  
+        'det_landmarks = tb3_landmarks.det_landmarks:main',  
+    ],  
+},  
+  
 Ejecutamos como sigue:  
 &nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False (*)  
 En otra terminal ejecutamos para lanzar el nodo:  
