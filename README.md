@@ -34,7 +34,7 @@ Primero debemos diseñar el mundo con los cilindros y el waffle pi dentro, se mo
 &nbsp;&nbsp;world = '/home/marcos/dev_ws/src/tb3_empty_world/worlds/Ejercicio_8.xacro' (segun la ubicación de su directorio particular)  
 Ejecutamos como sigue:  
 &nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False (*)  
-En otra terminal ejecutamos:  
+En otra terminal ejecutamos para lanzar el nodo:  
 &nbsp;&nbsp;cd ~/dev_ws  
 &nbsp;&nbsp;colcon build --packages-select tb3_landmarks  
 &nbsp;&nbsp;source install/setup.bash  
