@@ -46,6 +46,7 @@ entry_points={
   
 Ejecutamos como sigue:  
 &nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False &nbsp;&nbsp;(*)  
+![Simulación]([https://user-images.githubusercontent.com/123456/imagen.png](https://private-user-images.githubusercontent.com/232654958/499118487-ce81a752-8d56-4fab-8d41-97624c950ed3.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk5NzA3MzAsIm5iZiI6MTc1OTk3MDQzMCwicGF0aCI6Ii8yMzI2NTQ5NTgvNDk5MTE4NDg3LWNlODFhNzUyLThkNTYtNGZhYi04ZDQxLTk3NjI0Yzk1MGVkMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOVQwMDQwMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NzI0NDhjMDk3NjM0MDI3MzY4OGEzNTIzZjA3YjhmNWE4YjA1Njk5NmYxMDc0N2JmNTgyMGE1YjVjZWY1ZDY4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.vHMZOGjT8HEeIz5ZaKt_N1bpRzs0qozL4n0B5CTdfDg))  
 En otra terminal ejecutamos para lanzar el nodo:  
 &nbsp;&nbsp;cd ~/dev_ws  
 &nbsp;&nbsp;colcon build --packages-select tb3_landmarks  
