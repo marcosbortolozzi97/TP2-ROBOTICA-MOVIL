@@ -45,7 +45,7 @@ entry_points={
 },  
   
 Ejecutamos como sigue:  
-&nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False &nbsp;&nbsp; ![Simulación](https://github.com/marcosbortolozzi97/TP2-ROBOTICA-MOVIL/issues/1#issuecomment-3383663907) (*)  
+&nbsp;&nbsp;ros2 launch tb3_empty_world tb3_simulation_launch.py headless:=False &nbsp;&nbsp; ![Simulación]([https://github.com/marcosbortolozzi97/TP2-ROBOTICA-MOVIL/issues/1#issuecomment-3383663907](https://github.com/marcosbortolozzi97/TP2-ROBOTICA-MOVIL/issues/2#issuecomment-3383680011)) (*)  
 En otra terminal ejecutamos para lanzar el nodo:  
 &nbsp;&nbsp;cd ~/dev_ws  
 &nbsp;&nbsp;colcon build --packages-select tb3_landmarks  
