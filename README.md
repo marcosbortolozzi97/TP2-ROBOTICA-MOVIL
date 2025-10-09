@@ -54,6 +54,6 @@ En otra terminal ejecutamos para lanzar el nodo:
 En una tercera terminal verificamos que el nodo det_landmarks está publicando:  
 &nbsp;&nbsp;ros2 topic echo /landmarks  
   
-En RViz (abierto junto con Gazebo, sino se lo debe abrir) debemos abrir dentro de la sección Displays **Global Options**, y en la solapa a la derecha de **Fixed Frame** elegimos **base_link** (y enter). En caso de no estar, agregamos (solapa add) desde **by display type** el display **MarkerArray**, y una vez presente en la sección Displays abrimos y elegimos el **Topic** en la solapa a la derecha **/landmarks** (y enter). Debería vizualizarse el centro de los cilindros como puntos verdes.  
+En RViz (abierto junto con Gazebo, sino se lo debe abrir) debemos abrir dentro de la sección Displays **Global Options**, y en la solapa a la derecha de **Fixed Frame** elegimos **base_link** (y enter). Destildar la opción **LaserScan**. En caso de no estar, agregar (solapa add) desde **by display type** el display **MarkerArray**, y una vez presente en la sección Displays abrimos y elegimos el **Topic** en la solapa a la derecha **/landmarks** (y enter). Debería vizualizarse el centro de los cilindros como puntos verdes.  
   
 (*)Si queremos verificar que el laser scan esta publicando informacion de la simulacion en Gazebo abrimos otra terminal y ejecutamos **ros2 topic echo /scan**.
